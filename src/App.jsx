@@ -77,7 +77,7 @@ function App() {
 
                 <img
                   className="img-fluid"
-                  src="/images/pihole-tile.jpg"
+                  src="images/pihole-title.png"
                   alt="Pi-hole"
                 />
               </div>
@@ -102,7 +102,7 @@ function App() {
 
                 <img
                   className="img-fluid"
-                  src="/images/vpn-tile.jpg"
+                  src="images/vpn-title.png"
                   alt="VPN"
                 />
               </div>
@@ -127,7 +127,7 @@ function App() {
 
                 <img
                   className="img-fluid"
-                  src="/images/ue5-tile.jpg"
+                  src="/images/ue5-title.png"
                   alt="UE5"
                 />
               </div>
@@ -196,9 +196,9 @@ function App() {
 
             <h2 className="text-secondary mt-3">Pi-hole DNS Server</h2>
 
-            <img className="img-fluid my-4" src="/images/pihole-diagram.jpg" />
+            <img className="img-fluid my-4" src="images/pihole-diagram.png" />
 
-            <p className="text-start">
+            <p className="text-secondary">
               Built a Pi-hole DNS server to block ads network-wide. This project
               involved configuring DNS routing, Docker deployment, and local network
               management.
@@ -219,9 +219,9 @@ function App() {
 
             <h2 className="text-secondary mt-3">VPN Setup</h2>
 
-            <img className="img-fluid my-4" src="/images/vpn-diagram.jpg" />
+            <img className="img-fluid my-4" src="images/vpn-diagram.png" />
 
-            <p className="text-start">
+            <p className="text-secondary">
               Configured a home VPN for secure remote access. Worked with port
               forwarding, DDNS, firewall rules, and networking troubleshooting.
             </p>
@@ -249,7 +249,7 @@ function App() {
               ></iframe>
             </div>
 
-            <p className="text-start">
+            <p className="text-secondary">
               Built a UE5 project exploring level design and gameplay systems.
             </p>
 
