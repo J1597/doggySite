@@ -6,11 +6,11 @@ function App() {
       {/* NAVBAR */}
       <nav className="p-0 navbar navbar-expand-sm bg-secondary text-uppercase fixed-top" id="mainNav">
         <div className="p-2 container">
-                <a class="navbar-brand" href="#page-top">Jeevan Gill</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
+          <a class="navbar-brand" href="#page-top">Jeevan Gill</a>
+          <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
 
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ms-auto">
@@ -243,12 +243,17 @@ function App() {
 
             <h2 className="text-secondary mt-3">Unreal Engine 5 Project</h2>
 
+            <img className="img-fluid my-4" src="images/ue5-diagram.png" />
+
             <div className="ratio ratio-16x9 my-4">
-              <iframe
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="UE5 Project"
-                allowFullScreen
-              ></iframe>
+              <a
+                href="https://www.youtube.com/watch?v=wvbgWcTxk14"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-lg"
+              >
+                ▶ Watch Gameplay
+              </a>
             </div>
 
             <p className="text-secondary">
