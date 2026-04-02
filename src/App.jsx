@@ -1,289 +1,197 @@
-import './App.css'
+import './styles.css'
+import logo from './images/Logo.png'
+import heroBackground from './images/Background.jpeg'
 
 function App() {
   return (
     <>
-      {/* NAVBAR */}
-      <nav className="p-0 navbar navbar-expand-sm bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div className="p-2 container">
-          <a class="navbar-brand" href="#page-top">Jeevan Gill</a>
-          <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <nav className="navbar navbar-expand-lg bark-navbar fixed-top" id="mainNav">
+        <div className="container">
+          <a className="navbar-brand d-flex align-items-center" href="#page-top">
+            <img
+              src={logo}
+              alt="Bark and Lounge Doggy Daycare logo"
+              className="nav-logo"
+            />
+            <span className="brand-text">Bark and Lounge</span>
+          </a>
+
+          <button
+            className="navbar-toggler bark-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             Menu
-            <i class="fas fa-bars"></i>
           </button>
 
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item mx-0 mx-lg-1">
-                <a className="nav-link py-2 px-2" href="#portfolio">
-                  Projects
-                </a>
+              <li className="nav-item">
+                <a className="nav-link" href="#about">About Us</a>
               </li>
-              <li className="nav-item mx-0 mx-lg-1">
-                <a className="nav-link py-2 px-2" href="#about">
-                  About
-                </a>
+              <li className="nav-item">
+                <a className="nav-link" href="#services">Services</a>
               </li>
-              <li className="nav-item mx-0 mx-lg-1">
-                <a className="nav-link py-2 px-2" href="#contact">
-                  Contact
-                </a>
+              <li className="nav-item">
+                <a className="nav-link" href="#book">Book</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      {/* HERO */}
-      <header className="masthead bg-primary text-white text-center" id="page-top">
-        <div className="container d-flex align-items-center flex-column">
-          <h1 className="masthead-heading text-uppercase mt-5 mb-0">
-            JEEVAN GILL
-          </h1>
+      <header
+        className="hero-section"
+        id="page-top"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        <div className="container d-flex justify-content-center align-items-center">
+          <div className="hero-card">
+            <img
+              src={logo}
+              alt="Bark and Lounge Doggy Daycare logo"
+              className="hero-logo"
+            />
 
-          <div className="mt-3 text-center">
-            <p className="h1 masthead-subheading font-weight-light mb-2">
-              My Portfolio
-            </p>
-            <p className="h5 font-weight-light mb-0">
-              IT / Networking / Projects
-            </p>
+            <div className="hero-copy">
+              <h1 className="hero-title">Bark and Lounge</h1>
+              <p className="hero-subtitle">Doggy Daycare</p>
+              <p className="hero-text">
+                A fun, beachy daycare space where dogs can play, relax, and be cared for in a warm and welcoming environment.
+              </p>
+            </div>
           </div>
         </div>
       </header>
 
-      {/* PROJECTS */}
-      <section className="bg-white page-section portfolio" id="portfolio">
+      <section className="page-section about-section" id="about">
         <div className="container">
-          <h2 className="h2 page-section-heading text-center text-uppercase text-secondary mb-0">
-            Projects
-          </h2>
+          <h2 className="section-title">About Us</h2>
+          <div className="info-card">
+            <p className="section-copy">
+              At Bark and Lounge, we believe daycare should feel happy, relaxed, and full of care. Our team brings a
+              light-hearted energy to each day while always making your dog’s comfort and safety the priority. We love
+              getting to know every pup’s personality, giving them gentle attention, playful interaction, and a calm,
+              caring environment where they can feel right at home.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <p className="text-center mt-4 mb-5">
-            Click a project to view details.
-          </p>
+      <section className="page-section services-section" id="services">
+        <div className="container">
+          <h2 className="section-title">Services</h2>
 
-          <div className="row justify-content-center">
-            {/* PIHOLE */}
-            <div className="col-md-6 col-lg-4 mb-5">
-              <div
-                className="portfolio-item mx-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModalPihole"
-              >
-                <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div className="portfolio-item-caption-content text-white">
-                    View Project
-                  </div>
-                </div>
-
-                <img
-                  className="img-fluid"
-                  src="images/pihole-title.png"
-                  alt="Pi-hole"
-                />
+          <div className="row g-4">
+            <div className="col-lg-6">
+              <div className="info-card h-100">
+                <h3 className="card-title">Half-Day Stay (2–6 Hours)</h3>
+                <p className="section-copy">Perfect for pups who need a fun break in their day.</p>
+                <p className="section-copy">Supervised playtime and socialization</p>
+                <p className="section-copy">Outdoor potty breaks</p>
+                <p className="section-copy">Cozy rest and cuddle time</p>
+                <p className="section-copy">Mental enrichment activities</p>
+                <p className="section-copy">Fresh water and a clean environment</p>
+                <p className="section-copy">Personalized care and attention</p>
+                <p className="section-copy strong-copy">
+                  Great for busy mornings, errands, or a little time to yourself.
+                </p>
               </div>
-
-              <h3 className="h5 text-center text-secondary mt-3 mb-0">
-                Pi-hole DNS Server
-              </h3>
             </div>
 
-            {/* VPN */}
-            <div className="col-md-6 col-lg-4 mb-5">
-              <div
-                className="portfolio-item mx-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModalVpn"
-              >
-                <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div className="portfolio-item-caption-content text-white">
-                    View Project
-                  </div>
-                </div>
-
-                <img
-                  className="img-fluid"
-                  src="images/vpn-title.png"
-                  alt="VPN"
-                />
+            <div className="col-lg-6">
+              <div className="info-card h-100">
+                <h3 className="card-title">Full-Day Stay (6–12 Hours)</h3>
+                <p className="section-copy">A full day of fun, care, and relaxation.</p>
+                <p className="section-copy">Everything included in Half-Day Stay</p>
+                <p className="section-copy">Feeding provided by owner</p>
+                <p className="section-copy">Extended play and enrichment sessions</p>
+                <p className="section-copy">Extra cuddle and rest periods</p>
+                <p className="section-copy">Photo and video updates for peace of mind</p>
+                <p className="section-copy strong-copy">
+                  Perfect for full work days — your pup will come home happy and tired.
+                </p>
               </div>
+            </div>
+          </div>
 
-              <h3 className="h5 text-center text-secondary mt-3 mb-0">
-                VPN Setup
-              </h3>
+          <div className="row g-4 pricing-row">
+            <div className="col-md-6">
+              <div className="info-card h-100">
+                <h3 className="card-title">Pricing</h3>
+                <div className="price-list">
+                  <div className="price-row"><span>Hourly</span><strong>$16</strong></div>
+                  <div className="price-row"><span>Half Day (1–6 hr)</span><strong>$35</strong></div>
+                  <div className="price-row"><span>Full Day (6–12 hr)</span><strong>$50</strong></div>
+                  <div className="price-row"><span>Walks</span><strong>$10</strong></div>
+                </div>
+              </div>
             </div>
 
-            {/* UE5 */}
-            <div className="col-md-6 col-lg-4 mb-5">
-              <div
-                className="portfolio-item mx-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModalUe5"
-              >
-                <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div className="portfolio-item-caption-content text-white">
-                    View Project
-                  </div>
+            <div className="col-md-6">
+              <div className="info-card h-100">
+                <h3 className="card-title">Packages</h3>
+                <div className="package-block">
+                  <h4>10 Visits — Save 10%</h4>
+                  <p className="section-copy">Half Day (10) — $315</p>
+                  <p className="section-copy">Full Day (10) — $450</p>
                 </div>
 
-                <img
-                  className="img-fluid"
-                  src="/images/ue5-title.png"
-                  alt="UE5"
-                />
+                <div className="package-block mb-0">
+                  <h4>20 Visits — Save 15%</h4>
+                  <p className="section-copy">Half Day (20) — $595</p>
+                  <p className="section-copy">Full Day (20) — $850</p>
+                </div>
               </div>
-
-              <h3 className="h5 text-center text-secondary mt-3 mb-0">
-                Unreal Engine 5 Project
-              </h3>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="page-section bg-primary text-white mb-0" id="about">
+      <section className="page-section book-section" id="book">
         <div className="container">
-          <h2 className="page-section-heading text-center text-uppercase text-white">
-            About
-          </h2>
-          <p className="font-weight-bold">
-            I’m a computer science graduate with a strong interest in networking, systems, and hands-on technical work. I enjoy building real projects that help me understand how things actually work, whether that’s setting up services on my home network, configuring remote access, or developing applications using modern tools. This website itself is something I built using React plus Bootstrap, and it reflects both my technical skills and my approach to learning by doing.
-          </p>
+          <h2 className="section-title section-title-light">Book</h2>
+          <div className="booking-shell">
+            <h3 className="card-title">Book Your Dog’s Visit</h3>
+            <p className="section-copy booking-copy">
+              Ready to reserve your dog’s spot? Use our booking page to schedule a visit.
+            </p>
 
-          <p className="font-weight-bold">
-            A lot of my experience comes from working on practical projects. I’ve set up a Pi-hole DNS server using Docker on a Windows machine to manage and filter network traffic, and I built a home VPN using OpenVPN on my router with Dynamic DNS through No-IP so I can securely access my network from anywhere. I also run a Jellyfin media server, which I configured for local and remote streaming, giving me experience with file sharing, network paths, and handling media across devices. Projects like these helped me understand how systems connect together, including DNS, routing, IP addressing, and how real-world networks behave outside of theory.
-          </p>
-
-          <p className="font-weight-bold">
-            I’ve also spent time learning software development, including building a game project in Unreal Engine 5 using C++. That experience helped me get more comfortable with object-oriented programming, debugging, and working through build and runtime issues. Overall, I like figuring things out by building and troubleshooting, and I’m always looking for ways to improve my skills. I’m currently focused on growing in IT and networking roles where I can apply what I’ve learned and keep developing.
-          </p>
+            <a
+              className="book-button"
+              href="https://barkandlounge.setmore.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Now
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section className="bg-white page-section" id="contact">
+      <section className="page-section contact-section" id="contact">
         <div className="container">
-          <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">
-            Contact
-          </h2>
-
-          <p className="h6 text-secondary text-center mt-4">
-            jeevan1597@outlook.com
-            <br />
-            Surrey, BC
-          </p>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="p-0 footer text-center">
-        <div className="p-4 container">
-          <p className="mb-0">
-            © {new Date().getFullYear()} Jeevan Gill. All rights reserved.
-          </p>
-        </div>
-      </footer>
-
-      {/* ================= MODALS ================= */}
-
-      {/* PIHOLE MODAL */}
-      <div className="portfolio-modal modal fade" id="projectModalPihole">
-        <div className="modal-dialog modal-xl">
-          <div className="modal-content text-center p-4">
-            <button className="btn-close ms-auto" data-bs-dismiss="modal"></button>
-
-            <h2 className="text-secondary mt-3">Pi-hole DNS Server</h2>
-
-            <img className="img-fluid my-4" src="images/pihole-diagram.png" />
-
-            <p className="text-secondary">
-              I set up a Pi-hole DNS server on my home network to better understand how DNS works and how network-wide filtering can be implemented. I hosted Pi-hole inside a Docker container on a Windows machine and configured my router to use it as the main DNS server for all connected devices. This allowed all DNS queries on the network to pass through Pi-hole first, giving me visibility into traffic and control over blocking ads and tracking domains.
-            </p>
-
-            <p className="text-secondary">
-              Through this setup, I learned how DNS requests flow from devices to the router and then to a local DNS server before reaching external resolvers. I tested and verified that Pi-hole was working by checking query logs and using tools like <em>nslookup</em> to confirm that blocked domains were resolving to 0.0.0.0. I also worked through issues like making sure the correct device was handling DNS requests and confirming that different devices on the network were actually using Pi-hole.
-            </p>
-
-            <p className="text-secondary">
-              This project helped me better understand how local services can be integrated into a home network and how DNS can be used not just for resolution, but also for filtering and control. It also gave me hands-on experience with Docker, networking basics, and troubleshooting real-world issues in a self-hosted setup.
-            </p>
-
-            <button className="btn btn-primary" data-bs-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* VPN MODAL */}
-      <div className="portfolio-modal modal fade" id="projectModalVpn">
-        <div className="modal-dialog modal-xl">
-          <div className="modal-content text-center p-4">
-            <button className="btn-close ms-auto" data-bs-dismiss="modal"></button>
-
-            <h2 className="text-secondary mt-3">VPN Setup</h2>
-
-            <img className="img-fluid my-4" src="images/vpn-diagram.png" />
-
-            <p className="text-secondary">
-              I set up a home VPN using OpenVPN on my router so I could securely access my home network from outside. The goal was to understand how remote access works and how devices connect back into a private network over the internet. I configured the VPN directly on the router and tested connections from external networks to make sure I could reach local services.
-            </p>
-
-            <p className="text-secondary">
-              Since my home network uses a dynamic public IP, I also set up Dynamic DNS using No-IP with a custom hostname. This allowed me to connect to my network using a consistent domain name instead of a changing IP address. The router automatically updates the hostname with my current public IP, which keeps the VPN connection stable over time.
-            </p>
-
-            <p className="text-secondary">
-              While working on this, I learned how public vs private IP addressing works, how port forwarding and routing affect connectivity, and how DNS plays a role in remote access. I also ran into and fixed issues related to DNS resolution, connection failures, and client configuration, which helped me understand how all the pieces fit together in a real setup.
-            </p>
-
-            <button className="btn btn-primary" data-bs-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* UE5 MODAL */}
-      <div className="portfolio-modal modal fade" id="projectModalUe5">
-        <div className="modal-dialog modal-xl">
-          <div className="modal-content text-center p-4">
-            <button className="btn-close ms-auto" data-bs-dismiss="modal"></button>
-
-            <h2 className="text-secondary mt-3">Unreal Engine 5 Project</h2>
-
-            <img className="img-fluid my-4" src="images/ue5-diagram.png" />
-
-            <div className="ratio ratio-16x9 my-4">
-              <a
-                href="https://www.youtube.com/watch?v=wvbgWcTxk14"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-lg"
-              >
-                ▶ Watch Gameplay
+          <h2 className="section-title">Contact</h2>
+          <div className="contact-card">
+            <p className="section-copy">
+              <a href="mailto:BarkAndLoungeDoggyDaycare@outlook.com">
+                BarkAndLoungeDoggyDaycare@outlook.com
               </a>
-            </div>
-            <p className="text-secondary">
-              I developed this Unreal Engine 5 project to learn how game development works using C++ and the Unreal Engine workflow. I followed a structured tutorial as a guide, but focused on understanding how everything connects, including class structure, components, and how gameplay logic is implemented and compiled inside the engine. This gave me experience working with Unreal’s C++ system instead of just using visual scripting.
             </p>
-
-            <p className="text-secondary">
-              The project includes core gameplay systems such as player movement, enemy AI behavior, combat mechanics, hit detection, health systems, and basic UI elements like a HUD. I worked with character classes, animation setup, and interactions between different actors in the world. I also dealt with things like AI sensing, enemy responses, and event-driven logic that ties gameplay systems together.
+            <p className="section-copy">Unit 101 3010 148 St, Surrey BC</p>
+            <p className="section-copy mb-0">
+              <a href="tel:+16046772887">(604) 677-2887</a>
             </p>
-
-            <p className="text-secondary">
-              A big part of this project was learning how to troubleshoot and debug issues. I worked through build errors, project configuration problems, and differences between how things behave in the editor versus a standalone build. I also learned how Unreal handles project files, compilation, and dependencies, which helped me get more comfortable working with larger systems and understanding how everything runs behind the scenes.
-            </p>
-
-            <button className="btn btn-primary" data-bs-dismiss="modal">
-              Close
-            </button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
