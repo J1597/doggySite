@@ -26,6 +26,9 @@ function App() {
               <li className="nav-item">
                 <a className="nav-link" href="#contact">Contact</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#terms">Terms</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -89,7 +92,7 @@ function App() {
 
             <div className="col-lg-6">
               <div className="info-card h-100">
-                <h3 className="card-title">Full-Day Stay (6–12 Hours)</h3>
+                <h3 className="card-title">Full-Day Stay (7–12 Hours)</h3>
                 <p className="section-copy">A full day of fun, care, and relaxation.</p>
                 <p className="section-copy">Everything included in Half-Day Stay</p>
                 <p className="section-copy">Feeding (owner provides food)</p>
@@ -171,6 +174,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      
     </>
   )
 }
