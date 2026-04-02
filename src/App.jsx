@@ -164,7 +164,7 @@ function App() {
                 BarkAndLoungeDoggyDaycare@outlook.com
               </a>
             </p>
-            <p className="section-copy">Unit 101 3010 148 St, Surrey BC</p>
+            <p className="section-copy">3010 148 St unit 101, Surrey, BC V4P 0G8</p>
             <p className="section-copy">
               <a href="tel:+16046772887">(604) 677-2887</a>
             </p>
