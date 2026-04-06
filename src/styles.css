@@ -1,3 +1,12 @@
+/* Prevent email overflow in Contact section */
+section p {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 @media (min-width: 992px) {
   .hero-section .container {
     margin-left: 0 !important;
