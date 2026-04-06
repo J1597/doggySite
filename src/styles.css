@@ -127,7 +127,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 120px;
   /* overflow-x: hidden; */
 }
 
@@ -379,7 +379,7 @@ body {
   .hero-section {
     align-items: flex-start;
     background: linear-gradient(180deg, var(--bark-teal), var(--bark-teal-dark)), url('./images/Background.jpeg') no-repeat center top / contain;
-    padding-top: 0;
+    padding-top: 120px;
     min-height: auto;
   }
 
