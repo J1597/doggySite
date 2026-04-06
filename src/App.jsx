@@ -1,7 +1,12 @@
-import './styles.css'
-import logo from './images/Logo.png'
-import heroBackground from './images/Background.jpeg'
-import { useState } from 'react'
+
+import './styles.css';
+import logo from './images/Logo.png';
+import heroBackground from './images/Background.jpeg';
+import { useState } from 'react';
+import instagramIcon from './images/instagramIcon.png';
+import mailIcon from './images/mailIcon.png';
+import mapsIcon from './images/mapsIcon.png';
+import phoneIcon from './images/phoneIcon.png';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -166,19 +171,42 @@ function App() {
           <h2 className="section-title">Contact</h2>
           <div className="contact-shell">
             <div className="contact-card">
-              <p className="section-copy">
-                <a href="mailto:BarkAndLoungeDoggyDaycare@outlook.com">
-                  BarkAndLoungeDoggyDaycare@outlook.com
+              <div className="section-copy contact-icons">
+                <a
+                  href="mailto:BarkAndLoungeDoggyDaycare@outlook.com"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5em', color: 'var(--bark-navy)', textDecoration: 'underline', marginRight: '1.5em' }}
+                >
+                  <img src={mailIcon} alt="Mail" style={{ width: '24px', height: '24px', verticalAlign: 'middle' }} />
+                  <span style={{ wordBreak: 'break-all' }}>
+                    BarkAndLoungeDoggyDaycare@<wbr />outlook.com
+                  </span>
                 </a>
-              </p>
-              <p className="section-copy">
-                <strong>Address:</strong> 3010 148 St unit 101, Surrey, BC V4P 0G8
-                <br />
-                <a href="https://maps.google.com/?q=3010+148+St+unit+101,+Surrey,+BC+V4P+0G8" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
-              </p>
-              <p className="section-copy">
-                <strong>Phone:</strong> <a href="tel:+16046772887">(604) 677-2887</a>
-              </p>
+                <a
+                  href="https://maps.google.com/?q=3010+148+St+unit+101,+Surrey,+BC+V4P+0G8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5em', color: 'var(--bark-navy)', textDecoration: 'underline', marginRight: '1.5em' }}
+                >
+                  <img src={mapsIcon} alt="Maps" style={{ width: '24px', height: '24px', verticalAlign: 'middle' }} />
+                  3010 148 St unit 101, Surrey, BC V4P 0G8
+                </a>
+                <a
+                  href="tel:+16046772887"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5em', color: 'var(--bark-navy)', textDecoration: 'underline', marginRight: '1.5em' }}
+                >
+                  <img src={phoneIcon} alt="Phone" style={{ width: '24px', height: '24px', verticalAlign: 'middle' }} />
+                  (604) 677-2887
+                </a>
+                <a
+                  href="https://www.instagram.com/barkandloungedoggydaycare/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5em', color: 'var(--bark-navy)', textDecoration: 'underline' }}
+                >
+                  <img src={instagramIcon} alt="Instagram" style={{ width: '24px', height: '24px', verticalAlign: 'middle' }} />
+                  Instagram
+                </a>
+              </div>
             </div>
           </div>
         </div>
