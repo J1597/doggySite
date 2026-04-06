@@ -12,7 +12,7 @@ function App() {
       <nav className="navbar navbar-expand-lg bark-navbar" id="mainNav">
         <div className="container-fluid bark-nav-wrap">
           <a className="navbar-brand bark-brand" href="#page-top">
-            <img src={logo} alt="Logo" className="nav-logo" />
+            <img src={logo} alt="Bark and Lounge Doggy Daycare logo - Dog daycare in Surrey BC and White Rock" className="nav-logo" />
             <span className="bark-brand-text">Bark and Lounge</span>
           </a>
         <button
@@ -54,14 +54,13 @@ function App() {
       >
         <div className="container d-flex align-items-start">
           <div className="hero-card">
-            <img src={logo} alt="Logo" className="hero-logo" />
+            <img src={logo} alt="Bark and Lounge Doggy Daycare logo - Dog daycare in Surrey BC and White Rock" className="hero-logo" />
 
             <div className="hero-copy">
               <h1 className="hero-title">Bark and Lounge</h1>
               <p className="hero-subtitle">Doggy Daycare</p>
               <p className="hero-text">
-                A fun, beachy daycare space where dogs can play, relax, and be cared for in
-                a warm and welcoming environment.
+                A fun, beachy dog daycare in South Surrey BC (White Rock) where your dog can play, relax, and be cared for in a warm and welcoming environment. Flexible half-day and full-day options, small groups, and personalized care.
               </p>
             </div>
           </div>
@@ -74,9 +73,9 @@ function App() {
           <div className="about-shell">
             <div className="info-card">
               <p className="section-copy">
-                Welcome to Bark and Lounge Doggy Daycare—Surrey’s cozy home-from-home for dogs. We believe great care starts with Personal meetings and services: every new family begins with a friendly meet-and-greet so we can understand your dog’s personality, routine, and special requests. Then we design a day that blends supervised play, enrichment, and peaceful lounge time, all tailored to your pup.
+                Welcome to Bark and Lounge Doggy Daycare—Surrey and White Rock’s cozy home-from-home for dogs. We believe great care starts with personal meetings and services: every new family begins with a friendly meet-and-greet so we can understand your dog’s personality, routine, and special requests. Then we design a day that blends supervised play, enrichment, and peaceful lounge time, all tailored to your pup.
 
-                Our caring team keeps groups small for safety, manners, and happy socialization. Clean, secure play areas, comfy rest zones, and plenty of one-to-one attention keep tails wagging. Puppies, adults, and seniors are all welcome, with flexible half-day and full-day options to suit your schedule. Expect clear communication and cheerful updates, so you always know how your best friend is doing.
+                Our caring team keeps groups small for safety, manners, and happy socialization. Clean, secure play areas, comfy rest zones, and plenty of one-to-one attention keep tails wagging. Puppies, adults, and seniors are all welcome, with flexible half-day and full-day options to suit your schedule. Expect clear communication and cheerful updates, so you always know how your best friend is doing. Serving Surrey BC and White Rock.
               </p>
             </div>
           </div>
@@ -172,9 +171,13 @@ function App() {
                   BarkAndLoungeDoggyDaycare@outlook.com
                 </a>
               </p>
-              <p className="section-copy">3010 148 St unit 101, Surrey, BC V4P 0G8</p>
               <p className="section-copy">
-                <a href="tel:+16046772887">(604) 677-2887</a>
+                <strong>Address:</strong> 3010 148 St unit 101, Surrey, BC V4P 0G8
+                <br />
+                <a href="https://maps.google.com/?q=3010+148+St+unit+101,+Surrey,+BC+V4P+0G8" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+              </p>
+              <p className="section-copy">
+                <strong>Phone:</strong> <a href="tel:+16046772887">(604) 677-2887</a>
               </p>
             </div>
           </div>
