@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/Terms" element={<Terms />} />
+      <Route path="/terms" element={<Terms />} />
       <Route path="/*" element={
         <>
           <nav className="navbar navbar-expand-lg bark-navbar" id="mainNav">
