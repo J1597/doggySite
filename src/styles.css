@@ -450,7 +450,34 @@ body {
   }
 }
 
-.book-shell, .contact-shell {
+
+/* Fix for book cards overflowing */
+
+.book-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 2rem auto;
+  box-sizing: border-box;
+}
+
+
+.booking-shell {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.contact-shell {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
