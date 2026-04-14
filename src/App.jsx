@@ -8,6 +8,15 @@ import mailIcon from './images/mailIcon.png';
 import mapsIcon from './images/mapsIcon.png';
 import phoneIcon from './images/phoneIcon.png';
 
+function trackBooking(label) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'booking_click', {
+      event_category: 'booking',
+      event_label: label,
+    });
+  }
+}
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
@@ -158,6 +167,7 @@ function App() {
                 href="https://barkandlounge.setmore.com/book?step=time-slot&products=ed99571c-2aaa-4634-9273-5cbbc5810a41&type=service&staff=SKIP&staffSelected=false"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackBooking("assessment")}
               >
                 Book Assessment
               </a>
@@ -172,6 +182,7 @@ function App() {
                 href="https://barkandlounge.setmore.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackBooking("book_now")}
               >
                 Book Now
               </a>
