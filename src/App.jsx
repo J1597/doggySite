@@ -155,7 +155,7 @@ function App() {
               </p>
               <a
                 className="book-button"
-                href="https://barkandlounge.setmore.com/assessment"
+                href="https://barkandlounge.setmore.com/book?step=time-slot&products=ed99571c-2aaa-4634-9273-5cbbc5810a41&type=service&staff=SKIP&staffSelected=false"
                 target="_blank"
                 rel="noopener noreferrer"
               >
