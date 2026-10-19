@@ -135,6 +135,7 @@ function App() {
                 <div className="price-row"><span>Hourly</span><strong>$16</strong></div>
                 <div className="price-row"><span>Half Day</span><strong>$35</strong></div>
                 <div className="price-row"><span>Full Day</span><strong>$50</strong></div>
+                <div className="price-row"><span>Overnight Boarding</span><strong>$75</strong></div>
                 <div className="price-row"><span>Walks</span><strong>$10</strong></div>
               </div>
             </div>
